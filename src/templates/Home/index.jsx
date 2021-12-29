@@ -65,7 +65,7 @@ class App extends Component {
         </div>
         {filteredPosts.length > 0 && <Posts posts={filteredPosts} />}
 
-        {filteredPosts.length == 0 && <p>Não existem posts</p>}
+        {filteredPosts.length === 0 && <p>Não existem posts</p>}
         <div className="button-container">
           {!searchValue && (
             <Button
